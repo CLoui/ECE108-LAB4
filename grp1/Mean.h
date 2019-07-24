@@ -8,10 +8,10 @@ class Mean {
  private:
   size_t _input_set_size;                       // stores the size of the set
   float _calculated_value;                      // stores the calculated mean of population
-  std::vector<int> population_stored            // stores the vector of population ages
+  std::vector<int> population_stored;           // stores the vector of population ages
 
  public:
-  Mean(const population &std::vector<int>);     // Constructor sets population vector<int>
+  Mean(const std::vector<int> &population);     // Constructor sets population vector<int>
   ~Mean();                                      // Destructor
   
   float CalculateMean();                        // Return mean age of population

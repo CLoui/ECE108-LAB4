@@ -3,7 +3,7 @@
 
 // Mean member functions
 //
-Mean::Mean(const population &std::vector<int>) {
+Mean::Mean(const std::vector<int> &population) {
   population_stored = population;
   _input_set_size = CalculateSetSize();
   _calculated_value = CalculateMean();
@@ -24,7 +24,7 @@ float Mean::CalculateMean() {
   
   float mean = sumOfAges / _input_set_size;
   
-  return mean
+  return mean;
 }
 
 unsigned int Mean::CalculateSetSize() {
