@@ -107,7 +107,37 @@ bool testCalculateMean() {
 
 bool testCalculateSetSize() {
   
-  return true;
+  bool passORfailSizePopuation = true;
+  
+  std::cout << blueColor("Testing Mean Population Stack Size") << std::endl;
+  Mean testing1(testPopulation1);
+  if (testing1.CalculateSetSize() == testPopulation1Size) {
+    std::cout <<  greenColor("     TEST MEAN POPULATION SIZE 1 PASSED") << std::endl;
+  }
+  else {
+    std::cout <<  redColor("     TEST MEAN POPULATION SIZE 1 FAILED") << std::endl;
+    passORfailSizePopuation = false;
+  }
+  
+  Mean testing2(testPopulation2);
+  if (testing2.CalculateSetSize() == testPopulation2Size) {
+    std::cout <<  greenColor("     TEST MEAN POPULATION SIZE 2 PASSED") << std::endl;
+  }
+  else {
+    passORfailSizePopuation = false;
+    std::cout <<  redColor("     TEST MEAN POPULATION SIZE 2 FAILED") << std::endl;
+  }
+  
+  Mean testing3(testPopulation3);
+  if (testing3.CalculateSetSize() == testPopulation3Size) {
+    std::cout <<  greenColor("     TEST MEAN POPULATION SIZE 3 PASSED") << std::endl;
+  }
+  else {
+    passORfailSizePopuation = false;
+    std::cout <<  redColor("     TEST MEAN POPULATION SIZE 3 FAILED") << std::endl;
+  }
+  
+  return passORfailSizePopuation;
 }
 
 std::string greenColor(std::string message) {
