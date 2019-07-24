@@ -7,7 +7,7 @@ std::vector<int> generate_random_sequence(const int n) {
   int desired_size = n;
   std::srand(std::time(nullptr));
 
-  int sequence = std::vector<int>();
+  auto sequence = std::vector<int>();
 
   while (sequence.size() < desired_size) {
     int new_number = std::rand() % RNG_UPPER_BOUND + RND_LOWER_BOUND;
