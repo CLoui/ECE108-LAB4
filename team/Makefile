@@ -8,5 +8,7 @@ BIN_NAME = team
 
 all:
 	$(CC) $(INCLUDES) $(OPTS) -o $(BIN_NAME) $(SRCS)
+run:
+	./$(BIN_NAME)
 clean:
 	rm -f $(BIN_NAME)
