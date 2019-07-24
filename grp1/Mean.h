@@ -11,7 +11,7 @@ class Mean {
   std::vector<int> population_stored            // stores the vector of population ages
 
  public:
-  Mean(const population &std::vector<int>);     // Constructor sets population vector<int>
+  Mean(const &std::vector<int> population);     // Constructor sets population vector<int>
   ~Mean();                                      // Destructor
   
   float CalculateMean();                        // Return mean age of population

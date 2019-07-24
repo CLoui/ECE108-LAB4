@@ -3,7 +3,7 @@
 
 // Mean member functions
 //
-Mean::Mean(const population &std::vector<int>) {
+Mean::Mean(const&std::vector<int> population) {
   population_stored = population;
   _input_set_size = CalculateSetSize();
   _calculated_value = CalculateMean();
